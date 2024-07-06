@@ -26,7 +26,7 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+VvX_ss25nAo2MT
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002151284979').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "")
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "My_Db_Telegram")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002175429235'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')

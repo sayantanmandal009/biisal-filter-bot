@@ -15,8 +15,8 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '22449327'))
-API_HASH = environ.get('API_HASH', '33c0257a7df6118f971a5a71415ae81d')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7056014024').split()]
@@ -40,11 +40,11 @@ IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002166136170'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/ajsuddjb236")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "13cd8cac8c4c24b7530e6d47e9ec30ce0607d4be")
+SHORTENER_API = environ.get("SHORTENER_API", "")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'publicearn.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "13cd8cac8c4c24b7530e6d47e9ec30ce0607d4be")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'publicearn.com')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "13cd8cac8c4c24b7530e6d47e9ec30ce0607d4be")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'publicearn.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
